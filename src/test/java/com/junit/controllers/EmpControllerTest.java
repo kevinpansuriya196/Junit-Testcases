@@ -54,7 +54,7 @@ class EmpControllerTest {
     void testGetEmpById() {
         EmpModel expectedList = new EmpModel();
         int id = 1;
-        Mockito.when(empService.getEmpById(id)).thenReturn(expectedList);
+        Mockito.when(empService.getEmpById1(id)).thenReturn(expectedList);
         EmpModel result = empController.getEmpById(id);
         Assertions.assertEquals(result, expectedList);
 

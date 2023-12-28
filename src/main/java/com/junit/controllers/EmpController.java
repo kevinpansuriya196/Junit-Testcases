@@ -24,7 +24,7 @@ public class EmpController {
 
     @GetMapping("/{id}")
     public EmpModel getEmpById(@PathVariable int id){
-        return this.empService.getEmpById(id);
+        return this.empService.getEmpById1(id);
     }
 
 

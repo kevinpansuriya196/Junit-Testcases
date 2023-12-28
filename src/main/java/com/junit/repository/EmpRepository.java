@@ -12,5 +12,6 @@ public interface EmpRepository extends JpaRepository<EmpModel,Integer> {
 
 
     List<EmpModel> findByName(String name);
+    List<EmpModel> findEmpsById(int id);
 
 }
